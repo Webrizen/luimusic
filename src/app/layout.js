@@ -11,7 +11,10 @@ const poppins = Poppins({
  });
 
 export const metadata = {
-  title: 'Lui Music',
+  title: {
+    default: 'Lui Music',
+    template: '%s | Lui Music'
+  },
   description: 'Lui Music is a powerful SaaS product that lets music enthusiasts enjoy their favorite songs from various sources without any ads or premium membership.',
 }
 
