@@ -7,8 +7,6 @@ export const metadata = {
 
 export default function Loading() {
   return (
-    <div>
-      Loading...
-    </div>
+    <div class="skeleton-loading"></div>
   )
 }

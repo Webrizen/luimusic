@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    border-radius: 10px;
+  }
+  
+  .card {
+    width: 40%;
+    background-color: rgba(225,225,225,0.9);
+    backdrop-filter: blur(90px);
+    padding: 20px;
+    border-radius: 5px;
+    border-top: 4px solid skyblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .loginbutton {
+    padding: 10px 20px;
+    background-color: #f6226f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .register-button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
