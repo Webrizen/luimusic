@@ -5,6 +5,10 @@
   --border: 0.1px solid silver;
 }
 
+::selection{
+  background: #1f1f1f;
+  color: #f0f0f0;
+}
 /* Reset CSS */
 * {
   box-sizing: border-box;
