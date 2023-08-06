@@ -1,0 +1,44 @@
+.SidebarSection{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Sidebar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: rgba(0,0,0,0.1);
+    border-radius: var(--border-radius);
+    margin: 0 auto;
+}
+.Sidebar p{
+    color: rgba(0,0,0,0.7);
+}
+.LinkBox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+.LinkBox:hover{
+    background: rgba(0,0,0,0.1);
+}
+@media (max-width: 700px) {
+    .Sidebar p{
+        display: none;
+    }
+    .SidebarSection > :first-child {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      
+    .spaceSidebar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

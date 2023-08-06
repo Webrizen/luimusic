@@ -1,9 +1,12 @@
 import './globals.css';
 import { Poppins } from 'next/font/google';
+import Sidebar from '@/components/sidebar';
+import Navbar from '@/components/Navbar';
 
 const poppins = Poppins({ 
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  subsets: ['latin']
+  subsets: ['latin'],
+  display: 'swap'
  });
 
 export const metadata = {
@@ -14,7 +17,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <section className='TwoCol'>
+          <div className="sidebar">
+            <Sidebar />
+          </div>
+          <div className='main'>
+            <Navbar />
+            {children}
+            </div>
+        </section>
+        </body>
     </html>
   )
 }
