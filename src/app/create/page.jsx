@@ -40,6 +40,12 @@ export default function Page() {
         )}
         {showLocalFileForm && (
           <form>
+            <label htmlFor="Name">Enter Name Of Your Music*</label>
+            <input type="text" placeholder='Beauty And A Beat (Official Music Video) ft. Nicki Minaj' />
+            <label htmlFor="Artist">Enter Artist Name*</label>
+            <input type="text" placeholder='Justin Bieber' />
+            <label htmlFor="Source">Source*</label>
+            <input type="text" value="Local Music" readOnly />
             <label htmlFor="File">Upload Your MP3 File*</label>
             <input type="file" required accept=".mp3" />
             <button>Save</button>
