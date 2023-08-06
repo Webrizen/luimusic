@@ -14,6 +14,7 @@
 }
 .Sidebar p{
     color: rgba(0,0,0,0.7);
+    font-size: smaller;
 }
 .LinkBox{
     display: flex;
@@ -22,6 +23,10 @@
     padding: 10px 20px;
     border-radius: var(--border-radius);
     cursor: pointer;
+    font-size: small;
+}
+.LinkBox svg{
+    font-size: 1.2rem;
 }
 .LinkBox:hover{
     background: rgba(0,0,0,0.1);
