@@ -47,7 +47,7 @@ button:hover{
 input, textarea, select{
   padding: 10px 20px;
   outline: none;
-  border: none;
+  border: var(--border);
   border-radius: 4px;
 }
 

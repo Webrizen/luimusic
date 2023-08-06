@@ -14,7 +14,7 @@ export default function Navbar() {
     <Link href="/">
     <div className={Styles.logo}>
     <Image src={Logo} alt='Lui Music' />
-    <span>LuiMusic</span>  
+    <span>Lui Music</span>  
     </div>
     </Link>
     <div className={Styles.leffNav}>

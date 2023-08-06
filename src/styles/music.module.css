@@ -1,0 +1,109 @@
+.Music{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Music h1{
+    font-size: 2.5rem;
+}
+.cardHolder{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+}
+.Card{
+    background: rgba(0, 0, 0, 0.051);
+    color: rgba(0,0,0,0.8);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: max-content;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    position: relative;
+}
+.Card img{
+    width: 100%;
+    height: auto;
+}
+.Card p{
+    display: flex;
+    justify-content: left;
+    font-size: 12px;
+    gap: 10px;
+    align-items: center;
+}
+.Card p svg{
+    font-size: 6px;
+}
+.PlayBTN{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #fff;
+    background: linear-gradient(45deg, cyan, blue);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.PlayBTN:hover{
+    background: rgba(0, 0, 0, 0.051);
+}
+.Card:hover{
+    background: rgba(0,0,0,0.1);
+}
+.Card:hover .PlayBTN{
+    display: flex;
+    opacity: 1;
+}
+.TwoCol{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 70%;
+}
+.Option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: max-content;
+    background: #f1f1f1;
+    border-radius: 10px;
+    border: var(--border);
+    padding: 20px;
+    cursor: pointer;
+}
+.Option:hover, .Option:active{
+    background: #f1f1f17b;
+}
+.Option svg{
+    font-size: 4rem;
+}
+.Music form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+}
+@media (max-width: 700px) {
+    .cardHolder{
+        grid-template-columns: 1fr 1fr;
+    }
+    .Card:focus-visible .PlayBTN{
+        display: flex;
+        opacity: 1;
+    }
+}
